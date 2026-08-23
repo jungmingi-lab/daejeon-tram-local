@@ -1,5 +1,5 @@
-// 배포된 백엔드 주소가 생기면 이 값만 바꾸면 됨 (예: "https://daejeon-tram-backend.onrender.com")
-const API_BASE = location.hostname === "localhost" ? "http://localhost:8000" : "https://daejeon-tram-backend.onrender.com";
+// 임시: ngrok으로 로컬 백엔드를 터널링한 주소 (Render 배포 완료되면 원래 주소로 되돌릴 것)
+const API_BASE = location.hostname === "localhost" ? "http://localhost:8000" : "https://patient-graves-umpire.ngrok-free.dev";
 
 async function fetchStations() {
   const res = await fetch(`${API_BASE}/stations`);
