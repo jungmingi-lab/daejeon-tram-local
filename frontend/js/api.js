@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:8000";
+// 배포된 백엔드 주소가 생기면 이 값만 바꾸면 됨 (예: "https://daejeon-tram-backend.onrender.com")
+const API_BASE = location.hostname === "localhost" ? "http://localhost:8000" : "https://daejeon-tram-backend.onrender.com";
 
 async function fetchStations() {
   const res = await fetch(`${API_BASE}/stations`);
