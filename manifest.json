@@ -1,0 +1,9 @@
+{
+  "name": "대전 트램 로컬 큐레이션",
+  "short_name": "트램큐레이션",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fafaf8",
+  "theme_color": "#1e8e5a",
+  "icons": []
+}
